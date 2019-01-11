@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tagrem Corp</title>
-    <link
-      rel="stylesheet"
-      href="http://fonts.googleapis.com/css? family=Lato:300,400,700"
-    />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css? family=Lato:300,400,700" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css" />
-    </head>
-    <body>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <img class='hero img-fluid' src="./images/banner.jpg" alt="Banner Image">
+    </div>
+    <header class="container">
         <h1>In Gravida Libero</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer enim neque, molestie ut placerat id, tincidunt in sem. Pellentesque sodales lobortis eros nec pulvinar. In ac ultrices ipsum, ultricies semper nisi. Morbi ac hendrerit nulla. Sed nec ex commodo, tincidunt felis ac, iaculis ipsum.</p>
-        <p>Morbi ac hendrerit nulla. Sed nec ex commodo, tincidunt felis ac, iaculis ipsum</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer enim neque, molestie ut placerat id, tincidunt in sem. Pellentesque sodales lobortis eros nec pulvinar. In ac ultrices ipsum, ultricies semper nisi. Morbi ac hendrerit nulla. Sed nec ex commodo, tincidunt felis ac, iaculis ipsum.
+        </p>
+        <p>
+            Morbi ac hendrerit nulla. Sed nec ex commodo, tincidunt felis ac, iaculis ipsum
+        </p>
+
         <h2>State Finder</h2>
         <select>
             <option value="">Select State</option>
@@ -71,26 +79,41 @@
             <option value="WY">Wyoming</option>
         </select>
         <button type="submit">Submit</button>
+    </header>
+
+   <!-- LIGHT GREY BOX -->
+    <section class="container bg-lightGrey gravida">
         <h2>In Gravida</h2>
-        <h2>In gravida</h2>
         <h3>Cras ac mauris</h3>
         <p>nteger dictum hendrerit pharetra. Cras fermentum posuere egestas.</p>
         <a>Learn More</a>
         <h3>Curabitur elementum</h3>
-        <p>Cras vel imperdiet mauris. Pellentesque libero mauris, interdum a felis et, condimentum mattis erat.</p>
+        <p>
+            Cras vel imperdiet mauris. Pellentesque libero mauris, interdum a felis et, condimentum mattis erat.
+        </p>
         <a>Learn More</a>
         <h3>Awards and Recognitions</h3>
-        <p>Aliquam eget ligula mauris. Etiam viverra non turpis eu auctor. Nullam pretium est libero, et condimentum massa egestas id. </p>
+        <p>
+            Aliquam eget ligula mauris. Etiam viverra non turpis eu auctor. Nullam pretium est libero, et condimentum massa egestas id.
+        </p>
         <a>Learn More</a>
         <h3>Morbi placerat </h3>
-        <p> Nam feugiat ultrices ligula eget faucibus. Mauris convallis ipsum est.</p>
+        <p>
+            Nam feugiat ultrices ligula eget faucibus. Mauris convallis ipsum est.</p>
         <a>Learn More</a>
         <h3>Suspendisse eu</h3>
         <p>Duis pretium elementum dui, id feugiat neque facilisis vel.</p>
         <a>Learn More</a>
         <h3> Integer faucibus</h3>
-        <p> Vivamus at rutrum est, eu pellentesque lacus. Curabitur imperdiet tortor sit amet enim ullamcorper, a aliquet odio rutrum.</p>
+        <p>
+            Vivamus at rutrum est, eu pellentesque lacus. Curabitur imperdiet tortor sit amet enim ullamcorper, a aliquet odio rutrum.
+        </p>
         <a>Learn More</a>
+    </section>
+    
+    <!-- PRODUCTS -->
+    
+    <section class="container bg-lightGrey">
         <h2>Products</h2>
         Fitler by
         <select>
@@ -110,67 +133,69 @@
             <li>
                 Product Title 2<br>
                 Starting at 1900<br>
-                Donec ornare magna sit amet erat molestie sollicitudin ac vitae lectus.</br>
+                Donec ornare magna sit amet erat molestie sollicitudin ac vitae lectus.<br>
                 <a>Learn More</a>
             </li>
             <li>
                 Product Title 3<br>
                 Starting at 1900<br>
-                Cras non metus sed odio tristique imperdiet.</br>
+                Cras non metus sed odio tristique imperdiet.<br>
                 <a>Learn More</a>
             </li>
             <li>
                 Product Title 3<br>
                 Starting at 1900<br>
-                Pellentesque mattis tellus ut molestie dapibus.</br>
+                Pellentesque mattis tellus ut molestie dapibus.<br>
                 <a>Learn More</a>
             </li>
         </ul>
-        <script type="text/javascript">
+    </section>
+    
+    
+    <script type="text/javascript">
         window.products = {
-        1: {
-            id : 1,
-            order: 1,
-            'title' : 'Product Title 1',
-            'price' : 'Starting at $500',
-            'desc' : 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.<br><br>'
-                +'<ul>'
-                        + '     <li>Non porta dui euismod nec</li>'
-                        + '     <li>Ut tristique ipsum velit</li>'
-                                        + '     <li>Quisque mollis justo</li>'
-                +'</ul>',
-            'uri-stub'   : '/buy-mattress/iseries/iseries-hybrid/iseries-approval-super-pillow-top',
-                            'src'        : 'material/000010885.jpg'
-        },
-        2: {
-            id : 2,
-            order: 2,
-            'title' : 'Product Title 2',
-            'price' : 'Starting at $1900',
-            'desc' : 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.',
-            'uri-stub'   : '/buy-mattress/iseries/iseries-hybrid/iseries-approval-super-pillow-top',
-                            'src'        : 'material/ff_x20_008.JPG'
-        },
-        3: {
-            id : 3,
-            order: 3,
-            'title' : 'Product Title 3',
-            'price' : 'Starting at $2730',
-            'desc' : 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.',
-            'uri-stub'   : '/buy-mattress/iseries/iseries-hybrid/iseries-approval-super-pillow-top',
-                            'src'        : 'material/sample1.jpg'
-        },
-        4: {
-            id : 4,
-            order: 4,
-            'title' : 'Product Title 3',
-            'price' : 'Starting at $731',
-            'desc' : 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.',
-            'uri-stub'   : '/buy-mattress/iseries/iseries-hybrid/iseries-approval-super-pillow-top',
-                            'src'        : 'material/sample_08.jpg'
+            1: {
+                id: 1,
+                order: 1,
+                'title': 'Product Title 1',
+                'price': 'Starting at $500',
+                'desc': 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.<br><br>' +
+                    '<ul>' +
+                    '     <li>Non porta dui euismod nec</li>' +
+                    '     <li>Ut tristique ipsum velit</li>' +
+                    '     <li>Quisque mollis justo</li>' +
+                    '</ul>',
+                'uri-stub': '/buy-mattress/iseries/iseries-hybrid/iseries-approval-super-pillow-top',
+                'src': 'material/000010885.jpg'
+            },
+            2: {
+                id: 2,
+                order: 2,
+                'title': 'Product Title 2',
+                'price': 'Starting at $1900',
+                'desc': 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.',
+                'uri-stub': '/buy-mattress/iseries/iseries-hybrid/iseries-approval-super-pillow-top',
+                'src': 'material/ff_x20_008.JPG'
+            },
+            3: {
+                id: 3,
+                order: 3,
+                'title': 'Product Title 3',
+                'price': 'Starting at $2730',
+                'desc': 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.',
+                'uri-stub': '/buy-mattress/iseries/iseries-hybrid/iseries-approval-super-pillow-top',
+                'src': 'material/sample1.jpg'
+            },
+            4: {
+                id: 4,
+                order: 4,
+                'title': 'Product Title 3',
+                'price': 'Starting at $731',
+                'desc': 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.',
+                'uri-stub': '/buy-mattress/iseries/iseries-hybrid/iseries-approval-super-pillow-top',
+                'src': 'material/sample_08.jpg'
+            }
         }
-        }
-
-        </script>
-    </body>
+    </script>
+</body>
 </html>

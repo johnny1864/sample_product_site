@@ -1,17 +1,86 @@
 /***********************
+    VARIABLES 
+************************/
+:root{
+    --header-text-color: #002b5a;
+    --header-content: #333;
+    --grey: #e2e2e2;
+    --light-grey: #f3f3f3;
+} 
+
+/***********************
     LAYOUT 
 ************************/
+/*
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+*/
 
 body {
+    font-family: 'Lato', Arial, sans-serif;
+    background-color: var(--grey);
 }
 
-/*UTILITY CLASSES*/
-
-.container {
-  max-width: 960px;
+h1, h2, h3{
+    color: var(--header-text-color);
+    margin-bottom: 42px;
+    text-transform: capitalize;
 }
+
+h1{
+    font-size: 42px;
+    font-weight: 200;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 200;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/********************
+    UTILITY CLASSES
+*********************/
+
+
+.bg-lightGrey{
+    background-color: var(--grey);
+}
+
+.bg-lightGrey{
+    background-color: var(--lightGrey);
+}
+
+
+/*********************
+    HEADER
+**********************/
+.jumbotron .hero{
+    max-width: 100%;
+}
+
+header p {
+    color: var(--header-content);
+    font-size: 18px;
+}
+
+/*******************
+    LIGHT GREY BOX
+********************/
+section.gravida p{
+    font-size: 12px;
+    text-align: justify;
+}
+
+
+
+
+
+
