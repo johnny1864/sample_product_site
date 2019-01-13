@@ -1,86 +1,244 @@
-/***********************
+/********************
     VARIABLES 
-************************/
-:root{
-    --header-text-color: #002b5a;
-    --header-content: #333;
+*********************/
+:root {
+    --blue: #002b5a;
+    --lightBlue: #4987ca;
+    --black: #333;
     --grey: #e2e2e2;
-    --light-grey: #f3f3f3;
-} 
-
-/***********************
-    LAYOUT 
-************************/
-/*
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    --lightGrey: #f3f3f3;
+    --dardGrey: #666;
+    --white: #fff;
 }
-*/
+
+/********************
+    LAYOUT 
+*********************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Lato', Arial, sans-serif;
     background-color: var(--grey);
 }
 
-h1, h2, h3{
-    color: var(--header-text-color);
+h1,
+h2,
+h3 {
+    color: var(--blue);
     margin-bottom: 42px;
     text-transform: capitalize;
 }
 
-h1{
+h1 {
     font-size: 42px;
     font-weight: 200;
 }
 
-h2{
+h2 {
     font-size: 40px;
     font-weight: 200;
 }
 
-h3{
+h3 {
     font-size: 15px;
     font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+figure img{
+    width: 100%;
 }
 
 /********************
     UTILITY CLASSES
 *********************/
-
-
-.bg-lightGrey{
-    background-color: var(--grey);
+.container {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-.bg-lightGrey{
+.bg-lightGrey {
     background-color: var(--lightGrey);
 }
 
+.btn {
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 2px #fff inset;
+    border-radius: 3px;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: var(--blue);
+}
+
+.btn-blue {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/*********************
+    BANNER
+**********************/
+
+.jumbotron {
+    padding: 0;
+    position: relative;
+}
+
+.jumbotron .hero {
+    max-width: 100%;
+}
+
+.social-links {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    color: var(--white);
+    font-size: 12px;
+}
+
+.social-links li img {
+    margin-right: 1px;
+    width: 12px;
+}
+
+.social-links li:nth-of-type(1) {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 560px) {
+    .social-links {
+        display: none;
+    }
+}
 
 /*********************
     HEADER
 **********************/
-.jumbotron .hero{
-    max-width: 100%;
-}
 
 header p {
-    color: var(--header-content);
+    color: var(--black);
     font-size: 18px;
 }
 
+.state-finder {
+    border-radius: 3px;
+    padding: 1em;
+}
+
+.state-finder h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.state-finder p {
+    color: var(--blue);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
 /*******************
-    LIGHT GREY BOX
+    GRAVIDA SECTION
 ********************/
-section.gravida p{
+.gravida-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+/*
+.gravida-grid-item {
+    display: flex;
+    flex-direction: column;
+}
+*/
+
+section.gravida p {
     font-size: 12px;
     text-align: justify;
 }
 
+section.gravida,
+section.products {
+    padding: 2em;
+}
 
+@media screen and (max-width: 768px) {
+    .gravida-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
+/*********************
+    PRODUCT
+**********************/
+.products{
+    margin-top: 5px;
+}
 
+.products .card {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 
+.product-title{
+    color: var(--blue);
+    font-size: 17px;
+}
 
+.products .price{
+    color: var(--lightBlue);
+    font-size: 13px;
+}
+
+.products-grid .product-item figure,
+.products-grid .product-item img {
+    width: 100%;
+}
+
+.products .link{
+    font-size: 13px;
+    color: var(--darkGrey);
+    cursor: pointer
+}
+
+@media screen and (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/***********************
+    PRODUCT DETAILS BOX
+************************/
+#product-detail{
+    background-color: var(--white);
+    position: relative;
+    padding: 2em;
+    display: none;
+}
+
+#close{
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
