@@ -66,8 +66,7 @@
                     <h2>State Finder</h2>
                     <p>Morbi ac hendrerit nulla. Sed nec ex commodo</p>
                     <div class="d-flex">
-                        <select data-placeholder="Choose a country..." multiple id="state-finder" data-toggle='modal' data-target='#state-finder-modal'>
-                            <option value="">Select State</option>
+                        <select data-placeholder="Select Your State..." multiple id="state-finder" data-toggle='modal' data-target='#state-finder-modal'>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>
@@ -229,9 +228,9 @@
     <div class="px-2">
         <section class="container bg-lightGrey products">
             <div class='d-flex justify-content-between'>
-                <h2 class="col-7">Products</h2>
-                <div class="d-flex col">
-                    <label class="d-flex" for="select-price">Fitler by</label>
+                <h2 class="col-md-7 col-sm-6">Products</h2>
+                <div class="d-flex justify-content-end col select-price">
+                    <label  for="select-price">Fitler by</label>
                     <select class="form-control" id="select-price">
                         <option value='all'>All</option>
                         <option value='500'>Less Than $500</option>
@@ -347,9 +346,9 @@
             // SET MODAL TITLE TO STATE SELECTED
             $('#state-finder-modal .modal-title').text(state);
 
-            // CLOSE MODAL AND RESETS
+            // CLOSE MODAL AND RESETS SEARCH FIELD 
             $('#state-finder-modal .close').on('click', () => {
-                $('#state-finder').val('');
+                $('#state-finder').val('').trigger('chosen:updated');
             });
         });
     </script>

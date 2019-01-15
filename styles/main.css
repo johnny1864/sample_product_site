@@ -240,6 +240,14 @@ section.products {
     grid-gap: 10px;
 }
 
+.select-price label{
+    padding: 5px 10px;
+}
+
+.select-price select{
+    width: 150px;
+}
+
 .products .card {
     background-color: var(--white);
     padding: 1em;
@@ -302,6 +310,9 @@ section.products {
 }
 
 @media screen and (max-width: 560px) {
+    .select-price label{
+        display: none;
+    }
     .products-grid {
         grid-template-columns: 1fr;
     }
